@@ -2424,7 +2424,7 @@ void splice(NSMutableArray *input, NSUInteger start, NSUInteger count, NSArray *
   NSString *patchHeaderEnd = @"@@";
   NSString *optionalValueDelimiter = @",";
   BOOL scanSuccess, hasOptional;
-  NSInteger scannedValue, optionalValue;
+  NSInteger scannedValue = 0, optionalValue;
   NSDictionary *errorDetail = nil;
 
   unichar sign;
